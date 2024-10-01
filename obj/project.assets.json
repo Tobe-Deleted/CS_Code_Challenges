@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/fs/.nuget/packages/": {}
+    "C:\\Users\\Olive\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/fs/Dokumenter/Oppgaver_KH_Sep/CS_Code_Challenges/CS_Code_Challenges.csproj",
+      "projectUniqueName": "C:\\Users\\Olive\\Documents\\kodehode\\CS_Code_Challenges\\CS_Code_Challenges.csproj",
       "projectName": "CS_Code_Challenges",
-      "projectPath": "/home/fs/Dokumenter/Oppgaver_KH_Sep/CS_Code_Challenges/CS_Code_Challenges.csproj",
-      "packagesPath": "/home/fs/.nuget/packages/",
-      "outputPath": "/home/fs/Dokumenter/Oppgaver_KH_Sep/CS_Code_Challenges/obj/",
+      "projectPath": "C:\\Users\\Olive\\Documents\\kodehode\\CS_Code_Challenges\\CS_Code_Challenges.csproj",
+      "packagesPath": "C:\\Users\\Olive\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Olive\\Documents\\kodehode\\CS_Code_Challenges\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/fs/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Olive\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -38,6 +38,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -59,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

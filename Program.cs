@@ -5,6 +5,7 @@ class Program
     static void Main(string[] args)
     {
         Challenge_one one = new Challenge_one();
+        one.PrintNumbers();
         Challenge_two two = new Challenge_two();
         Challenge_three three = new Challenge_three();
 
