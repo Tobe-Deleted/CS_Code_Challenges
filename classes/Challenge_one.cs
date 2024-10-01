@@ -14,14 +14,31 @@ public class Challenge_one
     public void PrintStrings(string[] arr)
     {
         /* Todo: Print out each string that is passed to the array as an argument*/
+        
+        foreach(string ArrayString in arr)
+        {
+            Console.WriteLine(ArrayString);
+        }
     }
 
     public void CheckIfNumberIsPositiveOrNegative(int number)
     {
-        /*
-        Todo: Check if a number is positive, negative or zero.
-        */
+        int NumberB = number;
+        if(NumberB < 0)
+        {
+            Console.WriteLine("number is negative");
+        }
+        if(NumberB > 0)
+        {
+            Console.WriteLine("number is positive");
+        }
+        else
+        {
+            Console.WriteLine("Number is 0");
+        }
+        
     }
+
 
 
 }
