@@ -3,10 +3,20 @@ These are very difficult.
 */
 public class Challenge_three
 {
-    public void FizzBuzz()
+    public void FizzBuzz(int n)
     {
         // Todo: Implement fizzbuzz, if a number is divisible by 3: Fizz, if a number is divisible by 5: Buzz, if the number is divisible by both 3 and 5, FizzBuzz
         // https://www.geeksforgeeks.org/fizz-buzz-implementation/
+        
+        
+        if(n / 3 == 0)
+        {
+            Console.Write("Fizz");
+        }
+        if(n / 5 == 0)
+        {
+            Console.Write("Buzz");
+        }
     }
 
     public int RecursiveFactorial(int n)
