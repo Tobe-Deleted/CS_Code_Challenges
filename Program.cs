@@ -23,6 +23,7 @@ class Program
         one.CheckIfNumberIsPositiveOrNegative(AnyNumber);
 
         Challenge_two two = new Challenge_two();
+        two.GuessNumber();
         
         Challenge_three three = new Challenge_three();
 
@@ -48,7 +49,7 @@ class Program
         }
 
         ValidateRecursiveFactorial();
-        
+
         Console.WriteLine("Type in string to reverse:");
         string? GivenString = Console.ReadLine();
         string ReversedString = three.ReverseString(GivenString);
