@@ -23,12 +23,13 @@ public class Challenge_one
 
     public void CheckIfNumberIsPositiveOrNegative(int number)
     {
-        int NumberB = number;
-        if(NumberB < 0)
+        
+        
+        if(number < 0)
         {
             Console.WriteLine("number is negative");
         }
-        if(NumberB > 0)
+        if(number > 0)
         {
             Console.WriteLine("number is positive");
         }

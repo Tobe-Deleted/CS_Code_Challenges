@@ -7,7 +7,7 @@ public class Challenge_three
     {
         // Todo: Implement fizzbuzz, if a number is divisible by 3: Fizz, if a number is divisible by 5: Buzz, if the number is divisible by both 3 and 5, FizzBuzz
         // https://www.geeksforgeeks.org/fizz-buzz-implementation/
-        
+        n = 5;
         
         if(n / 3 == 0)
         {
@@ -15,7 +15,7 @@ public class Challenge_three
         }
         if(n / 5 == 0)
         {
-            Console.Write("Buzz");
+            Console.WriteLine("Buzz");
         }
     }
 

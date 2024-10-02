@@ -5,16 +5,17 @@ class Program
     static void Main(string[] args)
     {
         Challenge_one one = new Challenge_one();
-        //one.PrintNumbers();
+        one.PrintNumbers();
         string[] Array = [];
         one.PrintStrings(Array);
-        //one.CheckIfNumberIsPositiveOrNegative();
+        one.CheckIfNumberIsPositiveOrNegative(1);
 
         Challenge_two two = new Challenge_two();
         
         Challenge_three three = new Challenge_three();
-        int n = Convert.ToInt32(Console.ReadLine());
-        //three.FizzBuzz();
+        //int n = Convert.ToInt32(Console.ReadLine());
+        
+        //three.FizzBuzz(n);
 
         // validate some methods
         void ValidateRecursiveFactorial()
