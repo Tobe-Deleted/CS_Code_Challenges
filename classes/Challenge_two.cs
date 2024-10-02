@@ -9,7 +9,7 @@ public class Challenge_two
         {
             // Todo: Implement the correct conditionals inside the while loop.
 
-            Console.WriteLine("Guess the secret number(1-100): ");
+            Console.Write("Guess the secret number(1-100): ");
             guess = int.Parse(Console.ReadLine());
 
             if(guess < secret)
@@ -42,11 +42,18 @@ public class Challenge_two
         }
     }
 
-    public void CheckIfNumberIsEvenOrOdd(double a, double b)
+    public void CheckIfNumberIsEvenOrOdd(int EvenOrOdd)
     {
         // Todo: Check if a number is even or odd
         // if the number is even, write out "even"
         // if the number is odd, write out "odd"
-        Console.WriteLine("");
+        if(EvenOrOdd % 2 == 0)
+        {
+            Console.WriteLine("even");
+        }
+        else
+        {
+            Console.WriteLine("odd");
+        }
     }
 }

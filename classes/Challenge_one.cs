@@ -28,6 +28,7 @@ public class Challenge_one
         if(number < 0)
         {
             Console.WriteLine("number is negative");
+            
         }
         if(number > 0)
         {

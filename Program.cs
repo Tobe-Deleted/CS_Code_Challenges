@@ -6,25 +6,28 @@ class Program
 {
     static void Main(string[] args)
     {
-        Random Cointoss = new Random();
+        //Lager Array for oppgaven med array
+        string[] Array = ["fisk", "Øre", "pmax", "rykter"];
+
+        //Bruker random nummer istedenfor input
         Random RNG = new Random();
-        int AnyNumber = RNG.Next();
-        if( Cointoss.Next(0, 2)!=0)
-        {
-            AnyNumber = AnyNumber - AnyNumber - AnyNumber;
-        }
-        Console.WriteLine($"Your number is {AnyNumber}");
+        int AnyNumber = RNG.Next(-100, 101);
+        
+
 
 
         Challenge_one one = new Challenge_one();
         one.PrintNumbers();
-        string[] Array = [];
+
         one.PrintStrings(Array);
+
+        Console.WriteLine($"Your number is {AnyNumber}");//info om nummer før sjekk
         one.CheckIfNumberIsPositiveOrNegative(AnyNumber);
 
         Challenge_two two = new Challenge_two();
         two.GuessNumber();
         two.Fibonacci(10);
+        two.CheckIfNumberIsEvenOrOdd(AnyNumber);
         
         Challenge_three three = new Challenge_three();
 
@@ -51,9 +54,9 @@ class Program
 
         ValidateRecursiveFactorial();
 
-        Console.WriteLine("Type in string to reverse:");
-        string? GivenString = Console.ReadLine();
+        Console.Write("Type in string to reverse:");
+        string? GivenString = Console.ReadLine();//Henter string som skal reverseres
         string ReversedString = three.ReverseString(GivenString);
-        Console.WriteLine(ReversedString);
+        Console.WriteLine(ReversedString);//skriver ut string som er reversert
     }
 }
