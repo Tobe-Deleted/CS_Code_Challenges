@@ -32,13 +32,16 @@ public class Challenge_three
             return 1;
         }
         // n * Method(n - 1);
-        return n;
+        return n * RecursiveFactorial(n-1);
     }
 
     public string ReverseString(string str)
     {
         // Todo: reverse the given string
+
         char[] charArray = str.ToCharArray();
-        return str;
+        Array.Reverse(charArray);
+        return string.Join("", charArray);
+        
     }
 }

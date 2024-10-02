@@ -27,6 +27,8 @@ class Program
         Challenge_three three = new Challenge_three();
 
         three.FizzBuzz(AnyNumber);
+        
+        
 
         // validate some methods
         void ValidateRecursiveFactorial()
@@ -46,5 +48,10 @@ class Program
         }
 
         ValidateRecursiveFactorial();
+        
+        Console.WriteLine("Type in string to reverse:");
+        string? GivenString = Console.ReadLine();
+        string ReversedString = three.ReverseString(GivenString);
+        Console.WriteLine(ReversedString);
     }
 }
