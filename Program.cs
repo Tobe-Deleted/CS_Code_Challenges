@@ -24,6 +24,7 @@ class Program
 
         Challenge_two two = new Challenge_two();
         two.GuessNumber();
+        two.Fibonacci(10);
         
         Challenge_three three = new Challenge_three();
 
