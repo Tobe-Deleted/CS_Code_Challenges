@@ -23,7 +23,7 @@ public class Challenge_one
 
     public void CheckIfNumberIsPositiveOrNegative(int number)
     {
-        
+        /*Todo: Check if a number is positive, negative or zero.*/
         
         if(number < 0)
         {
@@ -33,7 +33,7 @@ public class Challenge_one
         {
             Console.WriteLine("number is positive");
         }
-        else
+        if(number == 0)
         {
             Console.WriteLine("Number is 0");
         }
