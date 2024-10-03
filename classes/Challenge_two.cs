@@ -10,8 +10,9 @@ public class Challenge_two
             // Todo: Implement the correct conditionals inside the while loop.
 
             Console.Write("Guess the secret number(1-100): ");
-            guess = int.Parse(Console.ReadLine());
-
+            
+                guess = Convert.ToInt32(Console.ReadLine());
+            
             if(guess < secret)
             {
                 Console.WriteLine("Nope! Go higher");
