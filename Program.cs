@@ -1,15 +1,21 @@
 ﻿using System.Security.Cryptography;
-
+/*
+    Jeg har brukt kommentar til å forklare ting som kanskje er litt utenfor 
+    det oppgaven spør om
+*/
 namespace CS_Code_Challenges;
 
 class Program
 {
     static void Main(string[] args)
     {
-        //Lager Array for oppgaven med array
-        string[] Array = ["fisk", "Øre", "pmax", "rykter"];
 
-        //Bruker random nummer istedenfor input
+        string[] Array = ["fisk", "øre", "pmax", "rykter"];//Lager Array med strings for PrintStrings oppgaven
+
+        /*
+        Bruker random nummer istedenfor input for PositiveOrNegative oppgaven,
+        OddOrEven oppgaven og FizzBuzz oppgaven
+        */
         Random RNG = new Random();
         int AnyNumber = RNG.Next(-100, 101);
         
@@ -21,19 +27,18 @@ class Program
 
         one.PrintStrings(Array);
 
-        Console.WriteLine($"Your number is {AnyNumber}");//info om nummer før sjekk
+        Console.WriteLine($"Your number is {AnyNumber}");//info om hva nummer brukes før sjekk
         one.CheckIfNumberIsPositiveOrNegative(AnyNumber);
 
         Challenge_two two = new Challenge_two();
         two.GuessNumber();
+
         two.Fibonacci(10);
+
         two.CheckIfNumberIsEvenOrOdd(AnyNumber);
         
         Challenge_three three = new Challenge_three();
-
         three.FizzBuzz(AnyNumber);
-        
-        
 
         // validate some methods
         void ValidateRecursiveFactorial()
@@ -54,15 +59,18 @@ class Program
 
         ValidateRecursiveFactorial();
 
+
+        //reverse string oppgaven:
         Console.Write("Type in string to reverse:");
-        string? GivenString = Console.ReadLine();//Henter string som skal reverseres
-        if(GivenString == null)
+        string? GivenString = Console.ReadLine();//input for string som skal reverseres
+
+        if(GivenString == null)//Lagt til for å bli kvitt null reference error
         {
             GivenString = "nevig tupni oN";
         }
         
-        
         string ReversedString = three.ReverseString(GivenString);
+
         Console.WriteLine(ReversedString);//skriver ut string som er reversert
         
     }
