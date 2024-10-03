@@ -56,7 +56,14 @@ class Program
 
         Console.Write("Type in string to reverse:");
         string? GivenString = Console.ReadLine();//Henter string som skal reverseres
+        if(GivenString == null)
+        {
+            GivenString = "nevig tupni oN";
+        }
+        
+        
         string ReversedString = three.ReverseString(GivenString);
         Console.WriteLine(ReversedString);//skriver ut string som er reversert
+        
     }
 }
