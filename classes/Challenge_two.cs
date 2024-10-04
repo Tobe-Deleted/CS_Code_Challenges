@@ -5,6 +5,7 @@ public class Challenge_two
         Random SecretNumber = new Random();
         int? secret = SecretNumber.Next(1,101); // Assign the secret value
         int? guess = 0;
+        int score = 0;
         while (guess != secret)
         {
             // Todo: Implement the correct conditionals inside the while loop.
@@ -12,18 +13,25 @@ public class Challenge_two
             Console.Write("Guess the secret number(1-100): ");
             
                 guess = Convert.ToInt32(Console.ReadLine());
-            
+                
             if(guess < secret)
             {
                 Console.WriteLine("Nope! Go higher");
+                score++;
             }
             if(guess > secret)
             {
                 Console.WriteLine("Nope! Go lower");
+                score++;
             }
             if(guess == secret)
             {
                 Console.WriteLine($"Yes! The secret number was indeed {secret}!");
+                if(score == 1)
+                {
+                Console.WriteLine($"You made {score} mistake.");
+                }
+                else Console.WriteLine($"You made {score} mistakes");
             }
             //break;
         }
