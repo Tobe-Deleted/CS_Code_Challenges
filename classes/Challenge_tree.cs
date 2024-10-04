@@ -17,7 +17,7 @@ public class Challenge_three
         {
             FizzBuzzString = FizzBuzzString + "Buzz";
         }
-        if(n % 3 == 0 || n % 5 == 0)
+        if(n % 3 == 0 || n % 5 == 0) //Kunne egentlig skippet if sjekken her, men da blir det en tom line.
         {
             Console.WriteLine(FizzBuzzString);
         }

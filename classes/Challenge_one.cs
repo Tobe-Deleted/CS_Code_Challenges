@@ -30,11 +30,11 @@ public class Challenge_one
             Console.WriteLine("number is negative");
             
         }
-        if(number > 0)
+        else if(number > 0) //endret fra vanlig if til else if etter gjennomgang på fredag
         {
             Console.WriteLine("number is positive");
         }
-        if(number == 0)
+        else if(number == 0) //endret fra vanlig if til else if etter gjennomgang på fredag
         {
             Console.WriteLine("Number is 0");
         }
